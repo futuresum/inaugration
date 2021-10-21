@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>IEEE Powering the Future Summit Inauguration</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ephesis">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body class="index-page sidebar-collapse">
+
+    <div class="rxWorld">
+        <section class="rnOuter" onclick="myAnimate()" id="outer">
+            <section class="aoTable">
+                <div class="aoTableCell" id="content">
+                    <!-- <img src="favicon.png" width="500px" height="auto"> -->
+                    <!-- <h1 style="font-family: 'Ephesis', serif; color: green; font-size: 70px;">Officially Inaugurated -->
+                    </h1>
+                    <audio id="audio" src="inaugurate.mp3"></audio>
+            </section>
+
+            <div class='rnInner' id="curtain">
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+                <div class='rnUnit'></div>
+            </div>
+        </section>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script>
+            function myAnimate() {
+                $('#curtain').addClass('anim');
+                $('#content').addClass('white');
+                $('.button').addClass('showButton');
+                $('#outer').addClass('bgChange');
+                var audio = document.getElementById("audio");
+                setTimeout(function() {
+                    document.getElementById("loading").style.visibility = "visible";
+                }, 4000);
+                audio.play();
+            };
+        </script>
+</body>
+
+</html>
